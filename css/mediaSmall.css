@@ -1,0 +1,454 @@
+@media screen and (max-width: 1030px) {
+
+
+
+    .colored-list-container ,
+    #assignments-colored-container{
+      /* display: none; */
+      width:95%;
+      margin:auto;
+      margin-top: 20px;
+      float: none;
+    }
+  
+    .profile-container{
+        float: none;
+        background-color: var(--third-color);
+        color: white;
+        width:95%;
+        margin:auto;
+        height: 150px;
+        margin-top:10px;
+      }
+
+      .details-container{
+        float: none;
+        background-color: white;
+        width:95%;
+        min-height: 340px;
+        margin:auto;
+        margin-bottom: 20px;
+        margin-top:10px;
+        /* flex-grow : 1; */
+        border-left: 2px solid;
+        border-bottom: 2px solid;
+        border-right: 2px solid;
+        border-color: var(--main-color);
+      }
+
+      /* Dashboard */
+      .stat-small{
+        width:48%;
+        margin:1%;
+      }
+
+
+      #news-container{
+        width:48%;
+        /* margin-left:1%;
+        margin-right:1%; */
+        margin:1%;
+      }
+      #donut-chart{
+        width:48%;
+        /* margin-left:1%;
+        margin-right:1%; */
+        margin:1%;
+      }
+
+      #assignments-must-deliverd{
+        width:80%;
+        float:inline-end;
+        margin-right:10% ;
+        display: block;
+        margin-top:10px;
+      }
+      .student-grades-content{
+        width:95%;
+        float: none;
+        margin:auto;
+        margin-top:20px;
+      }
+      
+}
+
+
+@media screen and (max-width: 690px) {
+    body{
+        min-width: 380px;
+    }
+    /* COLORED LIST */
+    .colored-list-container,
+    #assignments-colored-container {
+        /* display: none;  */
+        width:100%;
+        margin-top: 20px;
+    }
+    .colored-lists .list-row .birthday,
+    .colored-lists .list-row .subDate{
+        width:0%;
+        display:none;
+    }
+    .colored-lists .list-row .fullName,
+    .colored-lists .list-row .title{
+        width: 100%;
+        margin:auto;
+        text-align: center;
+    }
+    .colored-list-container-buttons{
+        padding-top: 20px;
+        display: block;
+        width:100%;
+        height: 60px;
+    }
+    .colored-list-container-buttons a .add_button{
+      background: var(--secondary-color); 
+      float:none;
+      display: block;
+      width:120px;
+      padding: 10px;
+      height: 40px;
+      font-size:  15px;
+      margin:auto;
+      text-align: center;
+      }
+    .colored-list-container-buttons a{
+      color:white;
+      text-decoration:none ;
+    }
+    /* colored-double-row */
+    .colored-list-container .colored-lists .list-double-row-container{
+      font-size: 15px;
+    }
+
+
+    /* PROFILE CONTAINER  */
+    .profile-container{
+        width: 100%;
+        height: 250px;
+    }
+    .profile-container .profile-image{
+        float:none;
+        width: 100%;
+        height: 100px;
+        display: block;
+    }
+    .profile-container .profile-image img{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        /* margin-left:10px; */
+        display: block;
+        margin:auto;
+      }
+    #fName-lName{
+        float:left;
+        font-size:18px;
+      }
+    .profile-first-row #profile-assignment-title
+    {
+      float:left;
+      width: 50%;
+      font-size:15px;
+      padding-top: 0px;
+    }
+    .profile-second-row .marks{
+      font-size: 15px;
+      padding: 5px 10px 5px 10px;
+      margin-right: 15px;
+    }
+
+
+
+      /* Details - Course */
+      .details-container .details-tabs-row div .tab-title{
+        display:none;
+      }
+      .details-container .details-tabs-row div{
+        width:40px;
+      }
+      .details-container{
+          width: 100%;
+      }
+      .details-content .content-profile-container{
+        display: block;
+        height:240px;
+      }
+      .details-content-list .content-profile-container{
+        display: block;
+        height:240px;
+      }
+      .details-content .content-profile-container .content-profile-image{
+        float: none;
+        display: block;
+        width:100%;
+        height: 60px;
+        margin-top: 10px;
+      }
+      .details-content-list .content-profile-container .content-profile-image{
+        margin-bottom:10px;
+      }
+      .details-content .content-profile-container .content-profile-image img{
+        float: none;
+        display: block;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin:auto;
+      }
+      .details-content .content-profile-container .content-profile .content-profile-first-row{
+        height: 100px;
+        width: 100%;
+        font-size:18px;
+        font-weight: bold;
+      }
+      .details-content-list .content-profile-container .content-profile .content-profile-first-row{
+        height:90px;
+        width: 100%;
+        font-size:18px;
+        font-weight: bold;
+      }
+      .details-content-list .content-profile-container .content-profile .content-profile-small-first-row{
+        height:50px;
+        width: 100%;
+        font-size:18px;
+        font-weight: bold;
+      }
+      .details-content .content-profile-container .content-profile .content-profile-first-row
+      #stream{
+        float: none;
+        height: 30px;
+        width: 100%;
+        font-size:18px;
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        margin:auto;
+      }
+      .details-content .content-profile-container .content-profile .content-profile-first-row 
+      #type{
+        float: none;
+        height: 30px;
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+        display: block;
+        margin:auto;
+      }
+      .details-content .content-profile-container .content-profile .content-profile-first-row 
+      #title{
+        float: none;
+        height: 30px;
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+        display: block;
+        margin:auto;
+      }
+      .details-content .content-profile-container .content-profile .content-profile-second-row{
+        float: none;
+        width:100%;
+        height: 100px;
+        font-size: 14px;
+        display: block;
+        text-align: center;
+        margin:auto;
+        /* margin: auto; */
+      }
+      #endsDate{
+        margin-right: 40px;
+      }
+      
+      /* Details - Assignments */
+      .content-profile-first-row .mark-box{
+        width:55%;
+        float:none;
+        border: solid;
+        border-radius: 3px;
+        border-color: var(--third-color);
+        background-color: var(--third-color);
+        color:white;
+        font-size: 12px;
+        text-align: center;
+        margin:auto;
+        margin-top: 5px;
+      }
+      #assignment-title{
+        width:100%;
+        display: block;
+        margin: auto;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .content-profile-second-row label{
+        float:inline-start;
+        margin-right: 15px;
+      }
+
+      .content-profile-second-row .descriptionsLabel{
+        float:inline-end;
+        margin-left: 10px;
+        border:solid;
+        border-radius: 3px;
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+        color: white;
+        margin-top: 5px;
+      }
+
+
+      /* FORMS */
+
+
+      .form-container{
+        width:95%;
+        padding-bottom: 20px;
+      }
+      .form-container .form-header{
+        font-size: 25px;
+      }
+      .form-container .form-body label{
+        font-size: 18px;
+        width: 60%;
+        text-align-last: left;
+        display:block;
+        margin:auto;
+      }
+      .form-container .form-body input{
+        width:60%;
+        border-radius: 5px;
+        border: none;
+        display:block;
+        margin:auto;
+      }
+      .div-textarea{
+        width:100%;
+        display: block;
+        margin:auto;
+        margin-top: 10px;
+      }
+      .div-textarea label{
+        font-size: 18px;
+        width: 100%;
+        text-align: left;
+        margin:auto;
+      }
+      .div-textarea textarea{
+        width:60%;
+        border-radius: 5px;
+        border: none;
+        display:block;
+        margin:auto;
+      }
+      
+      .form-container .buttons-area .submit-button{
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      /* Dashboard */
+      .stat-small{
+        width:80%;
+        float: none;
+        display: block;
+        margin:auto;
+        margin-top:20px;
+      }
+
+      #donut-chart{
+        width:80%;
+        float: none;
+        margin:auto;
+        margin-top:20px;
+      }
+
+      #news-container{
+        width:80%;
+        float: none;
+        margin:auto;
+        margin-top:20px;
+      }
+      
+      #assignments-must-deliverd{
+        width:80%;
+        float: none;
+        margin:auto;
+        margin-top:20px;
+      }
+
+
+      /* student-grades-content */
+      .student-grades-content{
+        width:100%;
+      }
+      .student-grades-container{
+        width: 100%;
+        height: 250px;
+      }
+      .student-grades-container .student-image{
+        float:none;
+        width: 100%;
+        height: 100px;
+        display: block;
+      }
+      .student-grades-container .student-image img{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        /* margin-left:10px; */
+        display: block;
+        margin:auto;
+      }
+
+
+
+
+
+}
+
+@media screen and (max-width: 510px) {
+
+  /* Dashboard */
+  .stat-small,#donut-chart,
+  #news-container,#assignments-must-deliverd
+  {
+    width:100%;
+  }
+
+  #assignments-m-d-header{
+    font-size: 15px;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 420px) {
+    body{
+        min-width: 380px;
+    }
+
+    .content-profile-second-row .deadlineLabel{
+        display: none;
+    }
+
+    .form-container .form-body input,
+    .form-container .form-body label,
+    .div-textarea textarea{
+      width: 95%;
+      font-size: 15px;
+    }
+    .form-container .form-header{
+      font-size: 20px;
+    }
+    /* colored-double-row */
+    .colored-list-container .colored-lists .list-double-row-container{
+      font-size: 10px;
+    }
+
+
+    
+
+    
+}

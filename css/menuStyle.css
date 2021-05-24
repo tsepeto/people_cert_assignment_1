@@ -1,0 +1,334 @@
+:root{
+    --main-menu-color: #2A6B97;
+    --secondary-menu-color: #22BAA0;
+    --third-color:#FA8072;
+    /* --secondary-menu-color: #5095C4; */
+    --secondary-blur:rgba(255, 255, 255, 0.8);
+    --color-a: #ffffff;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+.navigation
+{
+    
+    position:fixed;
+    top:0px;
+    width: 60px;
+    height: 100%;
+    background: var(--main-menu-color);
+    transition: 0.5s;
+    overflow:hidden;
+    
+    
+}
+.navigation:hover
+{
+    width:200px;
+    /* position: relative; */
+}
+
+.navigation ul #home  {
+    background-color: var(--main-menu-color);
+    padding-top: 17px;
+    line-height: 60px;
+}
+
+.navigation  #home:hover {
+    background: var(--secondary-menu-color);
+}
+
+.navigation ul{
+    position: absolute;
+    /* top:60px; */
+    left: 0;
+    width: 100%;
+    padding-left: 0px;
+}
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    font-weight: bolder;
+    
+}
+
+.navigation ul li:hover>a{
+    background: var(--secondary-menu-color);
+}
+
+
+.navigation ul li a,
+nav div a{
+    position: relative;
+    /* display: block; */
+    display: flex;
+    text-decoration: none;
+    color: var(--color-a);
+    
+}
+
+.navigation ul li a .icon,
+.navigation ul li .icon,
+nav div a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+
+
+.navigation ul li a .icon .fa,
+.navigation ul li a .icon .fas,
+.navigation ul li a .icon .far,
+.navigation ul li .icon .fas,
+nav div a .icon .fa
+{
+    font-size: 24px;
+}
+
+.navigation ul li a .title,
+nav div a .title{
+    position: relative;
+    /* display:block; */
+    padding: 0 10px;
+    
+    line-height: 60px;
+    text-align: start;
+    height: 60px;
+    white-space: nowrap;
+}
+nav{
+    height: 77px;
+    margin-left: 0px;
+    width: 100%;
+    background: var(--secondary-menu-color);
+    /* position:relative; */
+}
+
+nav a, nav a:visited{
+    color: var(--color-a);
+    text-decoration:none ;
+}
+  
+nav a h2{
+  padding-top: 7px;
+}
+
+nav #logo{
+    margin-top: 10px;
+    width: 140px;
+    float:left;
+    /* position: unset; */
+}
+
+nav ul{
+    float:right;
+    direction:ltr;
+    list-style-type: none;
+    width:150px;
+    
+}
+nav ul li{
+    display: inline-block;
+    font-family: arial, sans-serif;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: var(--color-a);
+    padding-top: 20px;
+    padding-bottom: 1px;
+    font-size: 16px;
+    vertical-align: auto;
+}
+nav ul li label{
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    display: block;
+}
+nav ul li img{
+    border-radius: 50%;
+    width:30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+nav ul li a i{
+  font-size: 25px;
+  padding-top: 0px;
+  color:var(--main-menu-color)
+}
+nav ul li a i:hover{
+  color: var(--third-color);
+}
+
+/* Landingpage navbar */
+nav.landing-page ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    float: right;
+    background: #eee;
+    border-bottom: 1px solid #fff;
+    border-radius: 3px;
+  }
+
+  nav.landing-page li {
+    float: left;
+  }
+
+  nav.landing-page #login {
+    border-right: 1px solid #ddd;
+    box-shadow: 1px 0 0 #fff;
+  }
+
+  nav.landing-page #login-trigger,
+  nav.landing-page #signup a {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    height: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    padding: 0 8px;
+    text-decoration: none;
+    color: #444;
+    text-shadow: 0 1px 0 #fff;
+  }
+
+  nav.landing-page #signup a {
+    border-radius: 0 3px 3px 0;
+  }
+
+  nav.landing-page #login-trigger {
+    border-radius: 3px 0 0 3px;
+  }
+
+  nav.landing-page #login-trigger:hover,
+  nav.landing-page #login .active,
+  nav.landing-page #signup a:hover {
+    background: #fff;
+  }
+
+  nav.landing-page #login-content {
+    display: none;
+    position: absolute;
+    top: 24px;
+    right: 0;
+    z-index: 999;
+    background: #fff;
+    background-image: linear-gradient(top, #fff, #eee);
+    padding: 15px;
+    box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+    border-radius: 3px 0 3px 3px;
+  }
+
+  nav.landing-page li #login-content {
+    right: 0;
+    width: 250px;
+  }
+
+  #inputs input {
+    background: #f1f1f1;
+    padding: 6px 5px;
+    margin: 0 0 5px 0;
+    width: 238px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px #ccc inset;
+  }
+
+  #inputs input:focus {
+    background-color: #fff;
+    border-color: #e8c291;
+    outline: none;
+    box-shadow: 0 0 0 1px #e8c291 inset;
+  }
+
+  #login #actions {
+    margin: 10px 0 0 0;
+  }
+
+  #login #submit {
+    background-color: #d14545;
+    background-image: linear-gradient(top, #e97171, #d14545);
+    border-radius: 3px;
+    text-shadow: 0 1px 0 rgba(0,0,0,.5);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3),
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    border: 1px solid #7e1515;
+    float: left;
+    height: 30px;
+    padding: 0;
+    width: 100px;
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    color: #fff;
+  }
+
+  #login #submit:hover,
+  #login #submit:focus {
+    background-color: #e97171;
+    background-image: linear-gradient(top, #d14545, #e97171);
+  }
+
+  #login #submit:active {
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+  }
+
+  #login label {
+    float: right;
+    line-height: 30px;
+  }
+
+  #login label input {
+    position: relative;
+    top: 2px;
+    right: 2px;
+  }
+
+
+
+
+
+/*  */
+
+
+
+
+@media screen and (max-width: 480px) {
+    nav{
+        padding-right: 10px;
+    }
+    nav ul{
+        width: 70px;
+    }
+    nav ul li label{
+        display: none;
+    }
+    nav ul li img{
+        border-radius: 50%;
+        width:30px;
+        height: 30px;
+    }
+   
+
+
+
+    
+}
